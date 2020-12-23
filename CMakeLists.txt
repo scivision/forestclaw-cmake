@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 
 include(cmake/compiler_find.cmake)
-find_c()
+find_c_fortran()
 
 project(forestclaw
   LANGUAGES C
