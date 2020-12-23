@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+    paths:
+      - "**/CMakeLists.txt"
+      - ".github/workflows/ci.yml"
+
+
+jobs:
+
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - run: cmake -B build --log-level=VERBOSE
+
+    - run: cmake --build build
