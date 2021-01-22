@@ -3,10 +3,7 @@
 ![ci](https://github.com/scivision/p4est-cmake/workflows/ci/badge.svg)
 
 Building [forestclaw](https://github.com/ForestClaw/forestclaw) as a CMake ExternalProject for easier use in CMake projects on Linux and MacOS.
-Windows has platform-specific issues, so it is probably easier to use Windows Subsystem for Linux.
-
-The CMake script runs `bootstrap`, `configure`, `make`, `make install`.
-On a good desktop PC it takes about 3 minutes to build.
+Windows has platform-specific issues (no autotools), so it is probably easier to use Windows Subsystem for Linux.
 
 ## Usage
 
@@ -17,7 +14,8 @@ cmake -B build
 cmake --build build
 ```
 
-Since this project consumes forestclaw as an [ExternalProject](https://cmake.org/cmake/help/latest/module/ExternalProject.html), forestclaw is downloaded, built, and tested upon the "cmake --build" command.
+This project consumes forestclaw as an [ExternalProject](https://cmake.org/cmake/help/latest/module/ExternalProject.html).
+Forestclaw is downloaded, built, and tested upon the "cmake --build" command.
 
 ### Artifacts
 
