@@ -1,3 +1,7 @@
+Archived because forestclaw now has CMake
+
+---
+
 # forestclaw-cmake
 
 ![ci](https://github.com/scivision/p4est-cmake/workflows/ci/badge.svg)
